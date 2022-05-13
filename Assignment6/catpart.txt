@@ -1,0 +1,46 @@
+
+# Source
+  Number of Source files:
+      0.										[property sourceNotFound]
+      1.										[if !sourceNotFound]
+      Many.				
+
+# Directory
+  Number of Directory files:
+      0.										[property directoryNotFound]
+      1.										[if !directoryNotFound]
+      Many.		  
+	  CantOpen.									[property cantopen]
+
+          
+# SourceName
+  Presence of a source file corresponding to the name:
+      Not Found.							 		[error][if directoryNotFound]
+      Exists.						    		    [if !sourceNotFound]
+	  
+# DirectoryName
+
+	Presence of a directory corresponding to the name:
+	  Destination file can not be opened.	   		[if cantopen][property force]
+													
+	  Not Found. 				        	 		[error][if directoryNotFound]
+	  Exists.									    [if !directoryNotFound]
+
+
+# OPTION 
+    -b(backup):
+        Present as an OPT.				
+        Not present as an OPT.		    [if (!sourceNotFound && !directoryNotFound) && !force] 
+    -f(force):
+        Present as an OPT.				 [if (!sourceNotFound && !directoryNotFound) && force]
+        Not present as an OPT.			 
+    -r(recursive):
+        Present as an OPT.				[if (!sourceNotFound && !directoryNotFound) && !force] 
+        Not present as an OPT.			
+    -v(verbose):
+        Present as an OPT.				[if (!sourceNotFound && !directoryNotFound) && !force] 
+        Not present as an OPT.			
+    
+
+
+

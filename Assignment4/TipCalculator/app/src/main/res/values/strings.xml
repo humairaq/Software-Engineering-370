@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="twentyFivePercentTotal">25%</string>
+    <string name="twentyPercentTip">20%</string>
+    <string name="twentyFivePercentTip">25%</string>
+    <string name="twentyPercentTotal">20%</string>
+    <string name="fifteenPercentTotal">15%</string>
+    <string name="compute_tip">COMPUTE TIP</string>
+    <string name="tip">Tip:</string>
+    <string name="total">Total:</string>
+    <string name="check_amount">Check Amount:</string>
+    <string name="party_size">Party size:</string>
+    <string name="fifteenPercentTip">15%</string>
+    <string name="tips_and_totals_per_person">Tips and totals (per person)</string>
+</resources>
